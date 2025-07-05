@@ -1,14 +1,13 @@
-// manifest.json
 {
-  "manifest_version": 2,
-  "name": "Super Lag Extension",
+  "manifest_version": 3,
+  "name": "Laggy Extension",
   "version": "1.0",
-  "description": "Runs multiple CPU‑burn and blocking tricks in the background.",
+  "description": "This extension intentionally slows down Chrome for educational purposes.",
   "background": {
-    "scripts": ["background.js"],
-    "persistent": true
+    "service_worker": "background.js"
   },
-  "permissions": [
-    "<all_urls>"
-  ]
+  "permissions": [],
+  "action": {
+    "default_title": "Laggy Extension"
+  }
 }
