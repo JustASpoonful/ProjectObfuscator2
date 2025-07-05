@@ -1,5 +1,5 @@
 // Change this number to adjust lag intensity (1-100)
-const INTENSITY = 20;
+const INTENSITY = 50;
 
 let burnInterval;
 
