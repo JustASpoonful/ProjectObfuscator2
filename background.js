@@ -1,5 +1,5 @@
 // Change this number to adjust lag intensity (1 = very light, 100 = extreme)
-const INTENSITY = 100; 
+const INTENSITY = 135; 
 
 function burnCPU(intensity) {
   const workTime = intensity;     // in milliseconds
