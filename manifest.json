@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Project Obfuscator",
+  "version": "1.0",
+  "description": "Simulates browser lag on startup for fun and education.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
