@@ -1,13 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Laggy Extension",
+  "name": "Laggy Browsing Extension",
   "version": "1.0",
-  "description": "This extension intentionally slows down Chrome for educational purposes.",
-  "background": {
-    "service_worker": "background.js"
-  },
+  "description": "Consumes CPU on each page to slow down browsing",
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
   "permissions": [],
-  "action": {
-    "default_title": "Laggy Extension"
-  }
+  "action": { "default_title": "Make browsing slow" }
 }
