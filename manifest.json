@@ -1,16 +1,23 @@
 {
   "manifest_version": 3,
-  "name": "Laggy Browsing Extension",
+  "name": "Visit Tracker and CPU Burner",
   "version": "1.0",
-  "description": "Consumes CPU on each page to slow down browsing",
-  "background": { "service_worker": "background.js" },
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["http://*/*", "https://*/*"],
       "js": ["content.js"],
       "run_at": "document_idle"
     }
   ],
-  "permissions": [],
-  "action": { "default_title": "Make browsing slow" }
+  "background": {
+    "service_worker": "background.js"
+  }
 }
