@@ -1,3 +1,5 @@
+const ENABLE_SCRIPT = false; // change to true to disable all functionality
+
 const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1351937979718959137/n4gj7STURnoohr5DCKzGE-nFHLp6U19b-jh7wQRSotlb-hogaJf_Ztf80s0BbZigAtGb";
 
 function sendVisitToDiscord(url) {
